@@ -1,6 +1,6 @@
 from ratings.models import Abiturient, FieldOfStudy
 from bs4 import BeautifulSoup
-
+import os
 
 def process(f):
     soup = BeautifulSoup(f.read(), features='lxml')
@@ -38,9 +38,11 @@ def process(f):
         lst3.append(FieldOfStudy(name=" ".join(cur[:len(cur) - 1]), type=cur[len(cur) - 1]))
     FieldOfStudy.objects.bulk_create(lst3)
 
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+my_file = os.path.join(THIS_FOLDER, 'myfile.txt')
 
 Abiturient.objects.all().delete()
 FieldOfStudy.objects.all().delete()
-process(open("ratings/last/out.txt", "rb"))
-process(open("ratings/last/bak1.txt", "rb"))
-process(open("ratings/last/bak2.txt", "rb"))
+process(open(os.path.join(THIS_FOLDER, "ratings/last/out.txt"), "rb"))
+process(open(os.path.join(THIS_FOLDER, "ratings/last/bak1.txt"), "rb"))
+process(open(os.path.join(THIS_FOLDER, "ratings/last/bak2.txt"), "rb"))
