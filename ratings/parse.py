@@ -41,6 +41,6 @@ def process(f):
 
 Abiturient.objects.all().delete()
 FieldOfStudy.objects.all().delete()
-process(open("ratings/last/out.txt", "rb"))
-process(open("ratings/last/bak1.txt", "rb"))
-process(open("ratings/last/bak2.txt", "rb"))
+#process(open("ratings/last/out.txt", "rb"))
+#process(open("ratings/last/bak1.txt", "rb"))
+#process(open("ratings/last/bak2.txt", "rb"))
