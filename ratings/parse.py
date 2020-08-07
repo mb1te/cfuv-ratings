@@ -39,7 +39,6 @@ def process(f):
     FieldOfStudy.objects.bulk_create(lst3)
 
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
-my_file = os.path.join(THIS_FOLDER, 'myfile.txt')
 
 Abiturient.objects.all().delete()
 FieldOfStudy.objects.all().delete()
