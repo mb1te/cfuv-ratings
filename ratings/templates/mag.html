@@ -1,0 +1,70 @@
+{# ratings/templates/index.html #}
+{% load render_table from django_tables2 %}
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Рейтинг</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <nav class="my-2 my-md-0 mr-md-3 center-block">
+                <span class="p-2 font-weight-bold">Рейтинговые списки КФУ им. В.И. Вернадского (головное отделение)</span>
+                <a href="bac" class="p-2 text-dark">Бакалавриат</a>
+                <a href="spec" class="p-2 text-dark">Специалитет</a>
+                <a href="mag" class="p-2 text-dark">Магистратура</a>
+                <a href="asp" class="p-2 text-dark">Аспирантура</a>
+                <a href="ord" class="p-2 text-dark">Ординатура</a>
+                <a href="search" class="p-2 text-dark">Поиск по ФИО</a>
+
+            </nav>
+        </div>
+        <div class="row">
+            <div class="form-group w-50 mx-auto">
+                <form method="POST" class="post-form">
+                    {% csrf_token %}
+                    <h6>Список поступающих в магистратуру {{print}}</h6>
+                    <div class="form-group">
+                        <label for="field">Направление подготовки: </label>
+                        {{ form.field }}
+                    </div>
+                    <div class="form-group">
+                        <label for="form">Форма обучения: </label>
+                        {{ form.form}}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Показать</button>
+                </form>
+            </div>
+            {% if need %}
+            <table class="w-auto table-fixed table table-bordered table-striped text-center mx-auto">
+                <thead>
+                    <tr class="table-info">
+                        <th>ФИО</th>
+                        <th>Согласие</th>
+                        <th>Сумма баллов</th>
+                        <th>Количество мест</th>
+                        <th>Место в рейтинге</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in table %}
+                    <tr>
+                        <td>{{item.fio}}</td>
+                        <td>
+                            {% if item.is_accepted %}
+                                +
+                            {% endif %}
+                        </td>
+                        <td>{{item.res_sum}}</td>
+                        <td>{{item.cnt_of_places}}</td>
+                        <td>{{item.cur_place}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+        </div>
+    </body>
+</html>

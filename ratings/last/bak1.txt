@@ -1,0 +1,1583 @@
+
+<!DOCTYPE html PUBLIC "HTML5">
+<HTML>
+	<HEAD>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+		<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+		<TITLE>UWS - Рейтинговый список абитуриентов</TITLE>
+		<LINK REL="STYLESHEET" HREF="CabScriptStyle/layout.css"/>
+		<!--[if IE]><script src="AdmScriptStyle/html5.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="AdmScriptStyle/jquery-ui-css/redmond/jquery-ui-1.9.2.custom.css"/>
+
+<script type="text/javascript" src="AdmScriptStyle/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="AdmScriptStyle/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="AdmScriptStyle/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="AdmScriptStyle/jquery.ui.datepicker-ru.js"></script>
+<script type="text/javascript" src="AdmScriptStyle/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="AdmScriptStyle/pm_5.js"></script>
+
+
+<SCRIPT>
+    $(document).ready(function () {
+        $(".PICKER").datepicker("option", "buttonImage", "AdmGraphics/calendar-day-32.png");
+        $(".DATETIMEPICKER").timepicker("option", "buttonImage", "AdmGraphics/calendar-day-32.png");
+        $('.spoiler_links').click(function () {
+            $(this).parent().children('div.spoiler_body').toggle('normal');
+            return false;
+        });
+    });
+    function bodyonload() {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        onloadpage();
+}
+//-->
+</SCRIPT>
+	</HEAD>
+	<BODY style="min-width:1024px;" ONLOAD="JavaScript:bodyonload();">
+		<DIV ID="WAITMSG"><IMG SRC="AdmGraphics/loader3.gif" /> Подождите, запрос обрабатывается...</DIV>
+	    <DIV ID="wrapper">
+            <HEADER ID="header" STYLE="min-height:84px;">
+                <FORM NAME="thisFilterForm" ID="thisFilterForm" ACTION="default.aspx?WCI=ENTRANTLIST&WCE=SUBMIT.&WCU=5.1.22402.20290825T19111332255410522.309644.4960981" METHOD="post"><INPUT TYPE="hidden" ID="WEBITEM" VALUE="ENTRANTLIST" />
+	                <div class="toppane">
+    <div class="ownername">
+
+
+            <div style="float:left; width: 100%; text-align: left;">
+
+
+                <div>Крымский федеральный университет им. В.И. Вернадского</div>
+            </div>
+
+        <div class="clear">&nbsp;</div>
+    </div>
+    <div class="username">
+        <table style="width:100%;height:100%;border-spacing:0;">
+            <tr>
+                <td style="vertical-align:middle;padding:0;">
+
+
+
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="topmenu">
+    <div class="pagename">
+
+
+
+
+
+
+
+
+
+
+                        Рейтинговый список абитуриентов
+
+
+
+
+    </div>
+    <div class="menu">
+
+            <TABLE CLASS="all">
+                <TR>
+
+                    <TD STYLE="padding:0px 0px 0px 14px;">
+
+
+
+                            <BUTTON TYPE="button" CLASS="toppane" TITLE="Посмотреть данные консультанта"
+                            ONCLICK="JavaScript:openMenu('DIVEMPLOYEE','fast');"><IMG SRC="AdmGraphics/Administrator-24.png" />консультант:
+				            </BUTTON>
+                            <DIV class="editmenu" style="width:320px;display:none;margin-top:6px;" ID="DIVEMPLOYEE">
+				                <DIV CLASS="managerPane" STYLE="width:95%">
+    <TABLE CLASS="all" style="position:relative;float:left;">
+        <TR>
+	        <TD ALIGN="left" CLASS="recordid">Знакомьтесь</TD>
+        </TR>
+        <TR>
+	        <TD VALIGN="top" STYLE="text-align:left;padding:4px 0 0 0;">
+	        <TABLE CLASS="all">
+			        <TR>
+			            <TD ROWSPAN="6" STYLE="padding:0 0 0 0;width:104px;vertical-align:top;"><IMG style="width:100px;" SRC="default.aspx?WCI=Images&WCE=IMAGE.EMPLOYEEID.0&WCU=5.1.22402.20290825T19111332255410522.309644.4960981&WCT=image/jpeg"></TD>
+				        <TD CLASS="test-question">
+				        </TD>
+				    </TR>
+
+
+
+			        <TR>
+				        <TD>E-mail: <A HREF="mailto:"></A></TD>
+			        </TR>
+
+
+	        </TABLE></TD>
+        </TR>
+    </TABLE>
+</DIV>
+                            </DIV>
+
+
+                    </TD>
+
+
+
+
+
+
+                                        <TD STYLE="padding:0px 0px 0px 14px;"><BUTTON TYPE="button" CLASS="toppane" TITLE="Выбрать и перейти в форум" ONCLICK="JavaScript:openMenu('DIVFORUMLIST','fast');"><IMG SRC="AdmGraphics/Talk-24.png" />форумы</BUTTON>
+                                        <DIV class="editmenu" style="width:320px;margin-top:6px;margin-left:-236px;" ID="DIVFORUMLIST">
+                                            <div CLASS="managerPane" style="width:95%">
+
+                                                    <DIV CLASS="users" title="Выбрать форум" ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=FORUM&WCE=COPYSTATE.FORUMVID.7&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',1);">Правила форумов. Новости и официальные уведомления.</div>
+
+                                                    <DIV CLASS="users" title="Выбрать форум" ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=FORUM&WCE=COPYSTATE.FORUMVID.4&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',1);">Форум для абитуриентов и родителей</div>
+
+                                                    <DIV CLASS="users" title="Выбрать форум" ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=FORUM&WCE=COPYSTATE.FORUMVID.3&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',1);">Форум преподавателей</div>
+
+                                                    <DIV CLASS="users" title="Выбрать форум" ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=FORUM&WCE=COPYSTATE.FORUMVID.2&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',1);">Форум студенческого сообщества</div>
+
+                                                    <DIV CLASS="users" title="Выбрать форум" ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=FORUM&WCE=COPYSTATE.FORUMVID.5&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',1);">Форум Центра дополнительного профессионального образования</div>
+
+                                            </div>
+                                        </DIV></TD>
+
+
+
+
+
+                    <TD STYLE="padding:0px 0px 0px 14px;"><BUTTON TYPE="button" CLASS="toppane" TITLE="Открыть страницу в новом окне"
+                    ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=ENTRANTLIST&WCF=FRAME1&WCE=COPYSTATE.PAGES.&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',1);"><IMG SRC="AdmGraphics/Window-24.png" />новое окно</BUTTON></TD>
+
+
+
+
+		                        <TD STYLE="padding:0px 0px 0px 14px;"><BUTTON TYPE="button" CLASS="toppane" TITLE="Выйти из кабинета"
+                                ONCLICK="JavaScript:thisPage._fireEvent('Вы действительно хотите выйти из кабинета?','LOGOFF','','','thisForm','','','GET');"><IMG SRC="AdmGraphics/Exit-24.png" />выход</BUTTON></TD>
+
+
+
+
+
+                </TR>
+            </TABLE>
+
+    </div>
+</div>
+
+
+
+
+
+            <TABLE STYLE="margin: 6px 0px 10px 10px;">
+                <TR>
+                    <TD><BUTTON TYPE="button" CLASS="menubutton" TITLE="Выбрать публикацию" ONCLICK="JavaScript:openMenu('DIVENTRANCERESULTID');"><IMG CLASS="button" SRC="AdmGraphics/Menu-24.png">Выбрать публикацию</BUTTON>
+                    <DIV ID="DIVENTRANCERESULTID" CLASS="combo" STYLE="OVERFLOW:auto;height:300px;width:680px;z-index:1;margin-top:2px;"><IMG ID="IMGUP" STYLE="display:none;" SRC="AdmGraphics/ld_2.png" /><IMG ID="IMGDWN" STYLE="display:none;" SRC="AdmGraphics/ld_3.png" />
+                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+                            <TR>
+                                <TD><SPAN CLASS="asa" ONCLICK="JavaScript:SetData('ENTRANCERESULTID','0','ENTRANCERESULTNAME','NOENTRANCERESULT');openMenu('DIVENTRANCERESULTID');" ID="NOENTRANCERESULT">Последняя публикация данных приемных кампаний</SPAN></TD>
+                            </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_9','IMGPUBLISH_9','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_9" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года  (Прием на обучение на бакалавриат/специалитет)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_9" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_227"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','227','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_227');openMenu('DIVENTRANCERESULTID');">
+                                                    04 августа 2020 20:45:26</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_210"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','210','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_210');openMenu('DIVENTRANCERESULTID');">
+                                                    02 августа 2020 19:01:28</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_207"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','207','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_207');openMenu('DIVENTRANCERESULTID');">
+                                                    01 августа 2020 14:37:58</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_196"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','196','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_196');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 22:55:20</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_185"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','185','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_185');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 18:53:27</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_171"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','171','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_171');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 20:22:27</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_160"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','160','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_160');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 19:11:04</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_10','IMGPUBLISH_10','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_10" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года (Прием на обучение в магистратуру)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_10" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_225"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','225','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_225');openMenu('DIVENTRANCERESULTID');">
+                                                    04 августа 2020 20:03:28</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_211"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','211','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_211');openMenu('DIVENTRANCERESULTID');">
+                                                    02 августа 2020 19:03:43</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_208"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','208','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_208');openMenu('DIVENTRANCERESULTID');">
+                                                    01 августа 2020 14:43:23</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_204"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','204','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_204');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 12:07:38</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_186"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','186','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_186');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 18:54:21</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_172"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','172','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_172');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 20:23:40</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_161"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','161','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_161');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 19:11:44</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_11','IMGPUBLISH_11','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_11" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года (Прием на подготовку кадров высшей квалификации)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_11" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_226"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','226','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_226');openMenu('DIVENTRANCERESULTID');">
+                                                    04 августа 2020 20:05:55</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_212"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','212','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_212');openMenu('DIVENTRANCERESULTID');">
+                                                    02 августа 2020 19:04:14</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_209"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','209','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_209');openMenu('DIVENTRANCERESULTID');">
+                                                    01 августа 2020 14:44:05</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_197"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','197','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_197');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 22:56:12</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_187"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','187','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_187');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 18:54:48</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_173"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','173','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_173');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 20:24:00</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_162"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','162','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_162');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 19:12:05</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_35','IMGPUBLISH_35','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_35" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года &quot;Ялта&quot; (Прием на обучение на бакалавриат/специалитет)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_35" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_221"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','221','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_221');openMenu('DIVENTRANCERESULTID');">
+                                                    04 августа 2020 12:36:12</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_213"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','213','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_213');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 11:29:23</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_202"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','202','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_202');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 11:52:43</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_201"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','201','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_201');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 11:48:26</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_200"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','200','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_200');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 11:46:37</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_199"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','199','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_199');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 11:39:47</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_189"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','189','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_189');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 11:48:44</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_181"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','181','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_181');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:48:02</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_175"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','175','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_175');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 11:01:36</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_163"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','163','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_163');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 11:06:42</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_36','IMGPUBLISH_36','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_36" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года &quot;Ялта&quot; (Прием на обучение в магистратуру)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_36" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_214"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','214','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_214');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 11:31:35</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_203"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','203','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_203');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 12:06:08</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_188"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','188','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_188');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 11:48:21</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_182"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','182','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_182');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:49:25</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_174"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','174','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_174');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 11:00:59</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_164"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','164','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_164');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 11:06:58</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_152"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','152','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_152');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 12:00:42</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_144"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','144','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_144');openMenu('DIVENTRANCERESULTID');">
+                                                    24 июля 2020 17:53:31</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_129"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','129','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_129');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 12:57:57</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_116"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','116','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_116');openMenu('DIVENTRANCERESULTID');">
+                                                    22 июля 2020 10:41:02</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_40','IMGPUBLISH_40','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_40" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания аспирантура 2020-2021 уч. года &quot;Ялта&quot; (Прием на подготовку кадров высшей квалификации)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_40" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_215"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','215','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_215');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 11:32:54</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_198"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','198','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_198');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 11:39:24</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_190"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','190','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_190');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 11:49:08</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_183"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','183','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_183');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:49:52</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_176"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','176','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_176');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 11:02:22</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_165"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','165','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_165');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 11:07:17</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_154"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','154','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_154');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 12:01:40</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_145"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','145','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_145');openMenu('DIVENTRANCERESULTID');">
+                                                    24 июля 2020 17:54:17</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_130"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','130','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_130');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 12:58:21</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_117"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','117','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_117');openMenu('DIVENTRANCERESULTID');">
+                                                    22 июля 2020 10:41:29</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_41','IMGPUBLISH_41','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_41" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания СПО 2020-2021 &quot;Ялта&quot; (Прием на обучение на СПО)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_41" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_33','IMGPUBLISH_33','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_33" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года &quot;Евпатория&quot; (Прием на обучение на бакалавриат/специалитет)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_33" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_219"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','219','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_219');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 17:03:18</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_194"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','194','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_194');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 17:12:31</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_179"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','179','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_179');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:28:46</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_169"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','169','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_169');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 16:21:33</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_158"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','158','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_158');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 16:48:18</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_140"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','140','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_140');openMenu('DIVENTRANCERESULTID');">
+                                                    24 июля 2020 17:27:28</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_134"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','134','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_134');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 17:14:14</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_118"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','118','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_118');openMenu('DIVENTRANCERESULTID');">
+                                                    22 июля 2020 16:17:59</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_109"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','109','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_109');openMenu('DIVENTRANCERESULTID');">
+                                                    21 июля 2020 17:12:36</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_96"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','96','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_96');openMenu('DIVENTRANCERESULTID');">
+                                                    20 июля 2020 16:36:07</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_43','IMGPUBLISH_43','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_43" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года &quot;Евпатория&quot; (Прием на обучение в магистратуру)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_43" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_220"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','220','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_220');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 17:04:30</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_195"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','195','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_195');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 17:13:46</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_180"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','180','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_180');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:29:30</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_168"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','168','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_168');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 16:21:04</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_157"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','157','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_157');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 16:47:53</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_141"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','141','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_141');openMenu('DIVENTRANCERESULTID');">
+                                                    24 июля 2020 17:28:00</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_135"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','135','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_135');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 17:15:07</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_119"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','119','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_119');openMenu('DIVENTRANCERESULTID');">
+                                                    22 июля 2020 16:18:30</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_110"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','110','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_110');openMenu('DIVENTRANCERESULTID');">
+                                                    21 июля 2020 17:13:07</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_97"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','97','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_97');openMenu('DIVENTRANCERESULTID');">
+                                                    20 июля 2020 16:36:20</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_34','IMGPUBLISH_34','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_34" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года &quot;Армянск&quot; (Прием на обучение на бакалавриат/специалитет)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_34" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_222"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','222','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_222');openMenu('DIVENTRANCERESULTID');">
+                                                    04 августа 2020 16:58:23</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_218"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','218','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_218');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 16:59:53</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_193"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','193','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_193');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 16:58:01</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_184"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','184','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_184');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:53:45</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_170"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','170','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_170');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 16:38:20</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_159"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','159','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_159');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 17:05:54</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_139"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','139','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_139');openMenu('DIVENTRANCERESULTID');">
+                                                    24 июля 2020 16:48:13</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_133"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','133','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_133');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 16:50:33</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_121"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','121','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_121');openMenu('DIVENTRANCERESULTID');">
+                                                    22 июля 2020 16:37:34</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_120"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','120','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_120');openMenu('DIVENTRANCERESULTID');">
+                                                    22 июля 2020 16:35:36</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_14','IMGPUBLISH_14','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_14" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приемная кампания 2020-2021 уч. года &quot;маленькое&quot; (Прием на обучение на СПО)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_14" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_47','IMGPUBLISH_47','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_47" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приёмная кампания 2020-2021 год &quot;Севастополь&quot; (Прием на обучение в магистратуру)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_47" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_223"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','223','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_223');openMenu('DIVENTRANCERESULTID');">
+                                                    04 августа 2020 17:56:53</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_217"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','217','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_217');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 16:00:27</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_206"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','206','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_206');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 16:20:45</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_192"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','192','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_192');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 15:59:42</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_177"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','177','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_177');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:11:26</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_167"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','167','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_167');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 16:14:01</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_155"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','155','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_155');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 14:29:18</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_132"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','132','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_132');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 14:45:29</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_95"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','95','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_95');openMenu('DIVENTRANCERESULTID');">
+                                                    20 июля 2020 15:54:15</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_84"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','84','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_84');openMenu('DIVENTRANCERESULTID');">
+                                                    17 июля 2020 16:01:05</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                                <TR>
+                                    <TD ONCLICK="JavaScript:thisPage._pulldown('DIVPUBLISH_46','IMGPUBLISH_46','IMGUP','IMGDWN');"><IMG ID="IMGPUBLISH_46" SRC="AdmGraphics/ld_2.png" /> <SPAN CLASS="asa">Приёмная кампания 2020-2021 года &quot;Севастополь&quot; (Прием на обучение на бакалавриат/специалитет)</SPAN></TD>
+                                </TR>
+                                <TR>
+                                    <TD STYLE="padding-left:15px">
+                                    <DIV ID="DIVPUBLISH_46" STYLE="display:none;">
+                                        <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_224"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','224','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_224');openMenu('DIVENTRANCERESULTID');">
+                                                    04 августа 2020 17:57:28</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_216"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','216','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_216');openMenu('DIVENTRANCERESULTID');">
+                                                    03 августа 2020 15:58:21</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_205"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','205','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_205');openMenu('DIVENTRANCERESULTID');">
+                                                    31 июля 2020 16:19:26</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_191"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','191','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_191');openMenu('DIVENTRANCERESULTID');">
+                                                    30 июля 2020 15:58:10</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_178"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','178','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_178');openMenu('DIVENTRANCERESULTID');">
+                                                    29 июля 2020 16:13:50</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_166"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','166','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_166');openMenu('DIVENTRANCERESULTID');">
+                                                    28 июля 2020 16:13:03</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_156"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','156','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_156');openMenu('DIVENTRANCERESULTID');">
+                                                    27 июля 2020 14:31:01</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_131"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','131','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_131');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 14:45:11</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_125"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','125','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_125');openMenu('DIVENTRANCERESULTID');">
+                                                    23 июля 2020 10:50:41</SPAN></TD>
+                                                </TR>
+
+                                                <TR>
+                                                    <TD>- <SPAN CLASS="asa" ID="ENTRANCERESULT_OPTION_106"
+                                                    ONCLICK="JavaScript:SetData('ENTRANCERESULTID','106','ENTRANCERESULTNAME','ENTRANCERESULT_OPTION_106');openMenu('DIVENTRANCERESULTID');">
+                                                    21 июля 2020 14:30:48</SPAN></TD>
+                                                </TR>
+
+                                        </TABLE>
+                                    </DIV></TD>
+                                </TR>
+
+                        </TABLE>
+                    </DIV></TD>
+                    <td style="font-size:14px;padding:10px;background-color:#fff;color:#005298;"><img src="AdmGraphics/Manual-48.png" style="vertical-align:middle;"> Для отображения рейтинговых списков нажмите на кнопку «Выбрать публикацию» и выберите соответствующую приемную кампанию с датой публикаций списков. После чего установите нужные вам фильтры.</td>
+                </TR>
+            </TABLE>
+
+
+
+
+
+
+
+<div class="clear"></div>
+                </FORM>
+            </HEADER>
+            <div class="clear"></div>
+            <FORM NAME="thisForm" ID="thisForm" ACTION="default.aspx?WCI=ENTRANTLIST&WCE=SUBMIT.&WCU=5.1.22402.20290825T19111332255410522.309644.4960981" METHOD="post">
+                <DIV ID="content"><SCRIPT type="text/javascript">
+<!--
+    function onloadpage() { }
+
+    function SetData(sField, sID, sNameField, sNameOption) {
+        if (sNameField != "" && sNameOption != "") $("#" + sNameField).text($("#" + sNameOption).text());
+        thisPage._fireEvent('', 'SETID', sField, sID, 'thisForm', '', '', 'GET', 'AJAX');
+    }
+    function AddRecordWithCheck() {
+        thisPage._fireEvent('', 'SEARCHSTUDENT', '', '', 'thisForm');
+    }
+//-->
+</SCRIPT>
+<TABLE CLASS="all" STYLE="width:100%;">
+    <TR>
+        <TD COLSPAN="2" CLASS="recordid" STYLE="padding: 10px 20px 20px 20px;color:#e87320;vertical-align:top;text-shadow:0px 0px 1px rgba(80, 80, 80, 0.60);"><SPAN ID="ENTRANCERESULTNAME">Публикация данных от 04 августа 2020 20:03:28: Приемная кампания 2020-2021 уч. года (Прием на обучение в магистратуру)</SPAN></TD>
+    </TR>
+    <TR>
+        <TD STYLE="width:50%;vertical-align:top;">
+        <TABLE CLASS="detailsform">
+            <TR>
+                <TH>Уровень образования</TH>
+                <TD STYLE="width:82%"><INPUT TYPE="hidden" ID="PROPERTYTYPEID" VALUE="0" />
+                <TABLE CLASS="tabasinput" ONCLICK="JavaScript:$(this).find('img').attr('src','AdmGraphics/combo_dn.png');openMenu('DIVPROPERTYTYPE');">
+                    <TR>
+                        <TD><SPAN ID="PROPERTYTYPENAME">Все уровни
+                        </SPAN></TD>
+                        <TD STYLE="width:17px;vertical-align:top;"><IMG CLASS="combo" SRC="AdmGraphics/combo_up.png" TITLE="Выбрать значение"
+                        ONMOUSEOVER="JavaScript:$(this).attr('src','AdmGraphics/combo_over.png');"
+                        ONMOUSEOUT="JavaScript:$(this).attr('src','AdmGraphics/combo_up.png');"></TD>
+                    </TR>
+                </TABLE>
+                <DIV ID="DIVPROPERTYTYPE" CLASS="combo" STYLE="OVERFLOW:auto;height:190px;width:470px;z-index:1;">
+                    <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+                        <TR>
+                            <TD><SPAN CLASS="asa" ONCLICK="JavaScript:SetData('PROPERTYTYPEID','0','PROPERTYTYPENAME','NOPROPERTYTYPE');openMenu('DIVPROPERTYTYPE');" ID="NOPROPERTYTYPE">Все уровни</SPAN></TD>
+                        </TR>
+
+                            <TR>
+                                <TD><SPAN CLASS="asa" ID="PROPERTYTYPE_OPTION_3"
+                                ONCLICK="JavaScript:SetData('PROPERTYTYPEID','3','PROPERTYTYPENAME','PROPERTYTYPE_OPTION_3');openMenu('DIVPROPERTYTYPE');">
+                                Высшее образование (ВО) - магистратура</SPAN></TD>
+                            </TR>
+
+                    </TABLE>
+                </DIV></TD>
+            </TR>
+            <TR>
+                <TH>Направление (специальность)</TH>
+                <TD><INPUT TYPE="hidden" ID="METRICID" VALUE="0" />
+                <TABLE CLASS="tabasinput" ONCLICK="JavaScript:$(this).find('img').attr('src','AdmGraphics/combo_dn.png');openMenu('DIVMETRIC');">
+                    <TR>
+                        <TD><SPAN ID="METRICNAME">Все направления
+                        </SPAN></TD>
+                        <TD STYLE="width:17px;vertical-align:top;"><IMG CLASS="combo" SRC="AdmGraphics/combo_up.png" TITLE="Выбрать значение"
+                        ONMOUSEOVER="JavaScript:$(this).attr('src','AdmGraphics/combo_over.png');"
+                        ONMOUSEOUT="JavaScript:$(this).attr('src','AdmGraphics/combo_up.png');"></TD>
+                    </TR>
+                </TABLE>
+                <DIV ID="DIVMETRIC" CLASS="combo" STYLE="OVERFLOW:auto;height:190px;width:470px;z-index:1;">
+                    <TABLE CLASS="all" STYLE="width:100%;font-size:12px;">
+                        <TR>
+                            <TD><SPAN CLASS="asa" ONCLICK="JavaScript:SetData('METRICID','0','METRICNAME','NOMETRIC');openMenu('DIVMETRIC');" ID="NOMETRIC">Все направления</SPAN></TD>
+                        </TR>
+
+                    </TABLE>
+                </DIV></TD>
+            </TR>
+            <TR>
+                <TH STYLE="width:18%">Конкурсная группа</TH>
+                <TD STYLE="width:82%">
+                <table class="tabasinput" onclick="JavaScript:$(this).find('img').attr('src','AdmGraphics/combo_dn.png');openMenu('DIVCOMPGROUP');">
+                    <tr>
+                        <td><FONT id="COMPGROUPNAME">Не имеет значения
+                        </FONT></td>
+                        <td style="width:17px;vertical-align:top;"><IMG class="combo" SRC="AdmGraphics/combo_up.png" TITLE="Выбрать значение"
+                        ONMOUSEOVER="JavaScript:$(this).attr('src','AdmGraphics/combo_over.png');"
+                        ONMOUSEOUT="JavaScript:$(this).attr('src','AdmGraphics/combo_up.png');"></td>
+                    </tr>
+                </table>
+                <div id="DIVCOMPGROUP" class="combo" style="OVERFLOW:auto;height:190px;width:470px;z-index:1;">
+                    <table class="all" style="width:100%">
+                        <tr>
+                            <td><span class="asa" onclick="JavaScript:SetData('COMPETITIVEGROUPID','0','COMPGROUPNAME','NOCOMPGROUP');openMenu('DIVCOMPGROUP');" id="NOCOMPGROUP">Не имеет значения</span></td>
+                        </tr>
+
+                    </table>
+                </div></TD>
+            </TR>
+        </TABLE></TD>
+        <TD STYLE="width:50%;vertical-align:top;">
+        <TABLE CLASS="detailsform">
+
+
+                    <TR>
+                        <TH><INPUT TYPE="hidden" NAME="FDOCSER" ID="FDOCSER"><INPUT TYPE="hidden" NAME="FDOCNUMBER" ID="FDOCNUMBER"><INPUT TYPE="hidden" NAME="FLASTNAME" ID="FLASTNAME"><INPUT TYPE="hidden" NAME="FFIRSTNAME" ID="FFIRSTNAME"></TH>
+                        <TD><BUTTON TYPE="button" CLASS="common" STYLE="text-align:left;margin-left:0;font-size:14px;" ONCLICK="JavaScript:openFrameWindow('default.aspx?WCI=SETDOCDATA&WCE=GOTO..&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',500,280);"><IMG SRC="AdmGraphics/magnifier-left.png" />Найти абитуриента в списке</BUTTON></TD>
+                    </TR>
+
+
+                <TR>
+                    <TH></TH>
+                    <TD><BUTTON TYPE="button" CLASS="common" STYLE="text-align:left;margin-left:0;font-size:14px;" ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=BENEFITERLIST&WCE=GOTO.PAGES.&WCU=5.1.22402.20290825T19111332255410522.309644.4960981');"><IMG SRC="AdmGraphics/script-attribute.png" />Список льготников по квоте</BUTTON></TD>
+                </TR>
+                <TR>
+                    <TH></TH>
+                    <TD><BUTTON TYPE="button" CLASS="common" STYLE="text-align:left;margin-left:0;font-size:14px;" ONCLICK="JavaScript:thisPage._navigateToUrl('default.aspx?WCI=RECOMMENDEDLIST&WCE=GOTO.PAGES.&WCU=5.1.22402.20290825T19111332255410522.309644.4960981');"><IMG SRC="AdmGraphics/script-stamp.png" />Рекомендованные к зачислению</BUTTON></TD>
+                </TR>
+
+        </TABLE></TD>
+    </TR>
+</TABLE>
+<DIV STYLE="margin-top:10px;">
+
+		<SELECT NAME="CURRENTPAGE" id="CURRENTPAGE" object="VWENTRANCERESULTITEM" ONCHANGE="JavaScript:thisPage._fireEvent('','GOTO','PAGES','.VWENTRANCERESULTITEM','thisForm','','','','AJAX');" TITLE="Переход на страницу">
+
+				<OPTION VALUE="1.VWENTRANCERESULTITEM" SELECTED>1</OPTION>
+
+				<OPTION VALUE="21.VWENTRANCERESULTITEM" >2</OPTION>
+
+				<OPTION VALUE="41.VWENTRANCERESULTITEM" >3</OPTION>
+
+				<OPTION VALUE="61.VWENTRANCERESULTITEM" >4</OPTION>
+
+				<OPTION VALUE="81.VWENTRANCERESULTITEM" >5</OPTION>
+
+				<OPTION VALUE="101.VWENTRANCERESULTITEM" >6</OPTION>
+
+				<OPTION VALUE="121.VWENTRANCERESULTITEM" >7</OPTION>
+
+				<OPTION VALUE="141.VWENTRANCERESULTITEM" >8</OPTION>
+
+				<OPTION VALUE="161.VWENTRANCERESULTITEM" >9</OPTION>
+
+				<OPTION VALUE="181.VWENTRANCERESULTITEM" >10</OPTION>
+
+				<OPTION VALUE="201.VWENTRANCERESULTITEM" >11</OPTION>
+
+				<OPTION VALUE="221.VWENTRANCERESULTITEM" >12</OPTION>
+
+				<OPTION VALUE="241.VWENTRANCERESULTITEM" >13</OPTION>
+
+				<OPTION VALUE="261.VWENTRANCERESULTITEM" >14</OPTION>
+
+				<OPTION VALUE="281.VWENTRANCERESULTITEM" >15</OPTION>
+
+				<OPTION VALUE="301.VWENTRANCERESULTITEM" >16</OPTION>
+
+				<OPTION VALUE="321.VWENTRANCERESULTITEM" >17</OPTION>
+
+				<OPTION VALUE="341.VWENTRANCERESULTITEM" >18</OPTION>
+
+				<OPTION VALUE="361.VWENTRANCERESULTITEM" >19</OPTION>
+
+				<OPTION VALUE="381.VWENTRANCERESULTITEM" >20</OPTION>
+
+				<OPTION VALUE="401.VWENTRANCERESULTITEM" >21</OPTION>
+
+				<OPTION VALUE="421.VWENTRANCERESULTITEM" >22</OPTION>
+
+				<OPTION VALUE="441.VWENTRANCERESULTITEM" >23</OPTION>
+
+				<OPTION VALUE="461.VWENTRANCERESULTITEM" >24</OPTION>
+
+				<OPTION VALUE="481.VWENTRANCERESULTITEM" >25</OPTION>
+
+		</SELECT>
+		<div id="PAGENAV"></div><br />
+<SELECT id="RETURNRECORDS" NAME="RETURNRECORDS" ONCHANGE="JavaScript: thisPage._fireEvent('', 'RETURNRECS', '', '', 'thisForm', '', '', '', 'AJAX');">
+
+        <OPTION VALUE="1" >1</OPTION>
+
+        <OPTION VALUE="2" >2</OPTION>
+
+        <OPTION VALUE="5" >5</OPTION>
+
+        <OPTION VALUE="10" >10</OPTION>
+
+        <OPTION VALUE="20" SELECTED>20</OPTION>
+
+        <OPTION VALUE="40" >40</OPTION>
+
+        <OPTION VALUE="80" >80</OPTION>
+
+</SELECT>
+<script>
+    var navObj= {
+        prevPage: 'JavaScript:thisPage._navigateToUrl("default.aspx?WCI=ENTRANTLIST&WCF=FRAME1&WCE=GOTO.PAGES.1.STR_OBJECT&WCU=5.1.22402.20290825T19111332255410522.309644.4960981","","AJAX");',
+        nextPage: 'JavaScript:thisPage._navigateToUrl("default.aspx?WCI=ENTRANTLIST&WCF=FRAME1&WCE=GOTO.PAGES.21.STR_OBJECT&WCU=5.1.22402.20290825T19111332255410522.309644.4960981","","AJAX");',
+        firstOnPage: '1',
+        lastOnPage: '20',
+        recordCount: '500',
+        pageCount: '25',
+        topRec: '500',
+        limited: '1',
+        extFilter: ''
+    }
+
+    var spl = $("<div class='recordstats fl'/>").appendTo("#PAGENAV");
+    var spr = $("<div class='recordstats fr'/>").appendTo("#PAGENAV");
+    spl.append("<span>Записи: " + navObj.firstOnPage + "-" + navObj.lastOnPage + " из " + navObj.recordCount + " </span>");
+    if (navObj.limited == '1') {
+        spl.append("<span> (список ограничен " + navObj.topRec + " записями — ");
+        $("<span class='reccontrol' style='background-color:transparent;' title='Показать все записи'>снять ограничения</span>").attr("onclick", "JavaScript:thisPage._fireEvent('','TOPREC','VALUE','UNLIMITED','thisForm', '', '', '', 'AJAX');").appendTo(spl);
+    } else {
+        spl.append("<span> (список не ограничен ");
+        $("<span class='reccontrol' style='background-color:transparent;'>ограничить список</a>").attr("title", "title='Ограничить список " + navObj.topRec + " записями").attr("onclick", "JavaScript:thisPage._fireEvent('','TOPREC','VALUE','" + navObj.topRec + "','thisForm', '', '', '', 'AJAX');").appendTo(spl);
+    }
+    spl.append("<span>)</span>");
+    var cp = $("#CURRENTPAGE");
+    $("<img class='rt3' src='AdmGraphics/Previous-24.png' title='На предыдущую страницу'>").attr("onclick", navObj.prevPage.replace("STR_OBJECT", cp.attr("object"))).appendTo(spr);
+    spr.append("<span> страница </span>").append(cp).append("<span> из "+navObj.pageCount+" </span>");
+    $("<img class='rt3' src='AdmGraphics/Next-24.png' title='На следующую страницу'>").attr("onclick", navObj.nextPage.replace("STR_OBJECT", cp.attr("object"))).appendTo(spr);
+    spr.append("<i class='ibs'/><span>Выводить записей: </span>").append($("#RETURNRECORDS"));
+</script>
+
+
+    <TABLE class="list" style="width:100%">
+		<thead>
+		    <TR>
+			    <TD style="width:3%">#</TD>
+			    <TD style="width:8%">ID абитуриента</TD>
+			    <TD style="width:16%">Ф.И.О. абитуриента</TD>
+			    <TD>Заявки на образовательные программы</TD>
+			    <TD style="width:16%">Результаты детально</TD>
+			    <TD style="width:7%">Суммарный балл</TD>
+
+                <TD style="width:5%;cursor:help" TITLE="Минимальный балл для приема на образовательную программу">Мин. балл</TD>
+                <TD style="width:5%;cursor:help" TITLE="Количество мест на образовательную программу">К-во мест</TD>
+                <TD style="width:5%;cursor:help" TITLE="Позиция абитуриента в рейтинге на образовательную программу">Позиция</TD>
+		    </TR>
+        </thead>
+        <tbody>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">1</TD>
+				<TD STYLE="vertical-align:top;">12505</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Богомаз Елена Владимировна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 27537 от 27.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">1</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">2</TD>
+				<TD STYLE="vertical-align:top;">9866</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Боровлёв Евгений Павлович</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 20492 от 21.07.20 г., 43.04.02 Туризм () , очная, 2 года, ГОРГ, бюджетная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">сервис и туризм - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">35</TD>
+                <TD STYLE="vertical-align:top;">1</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">3</TD>
+				<TD STYLE="vertical-align:top;">9705</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Исмаилова Селиме Шевкетовна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 20069 от 21.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">2</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">4</TD>
+				<TD STYLE="vertical-align:top;">14779</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Каранда Алексей Викторович</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">3</SPAN>
+			    № 33710 от 29.07.20 г., 40.04.01 Юриспруденция () , очная, 2 года, ГОРГ, бюджетная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Юриспруденция - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">26</TD>
+                <TD STYLE="vertical-align:top;">1</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">5</TD>
+				<TD STYLE="vertical-align:top;">9187</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Кенставичус Алексей Викторович</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">3</SPAN>
+			    № 18783 от 20.07.20 г., 05.04.06 Экология и природопользование () , очная, 2 года, ГОРГ, бюджетная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Экология и природопользование - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">12</TD>
+                <TD STYLE="vertical-align:top;">1</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">6</TD>
+				<TD STYLE="vertical-align:top;">10670</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Конопацкий Владимир Сергеевич</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 22528 от 22.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">3</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">7</TD>
+				<TD STYLE="vertical-align:top;">10100</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Крутий Анастасия Михайловна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">2</SPAN>
+			    № 25688 от 24.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, платная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">10</TD>
+                <TD STYLE="vertical-align:top;">1</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">8</TD>
+				<TD STYLE="vertical-align:top;">10100</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Крутий Анастасия Михайловна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 21087 от 22.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">4</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">9</TD>
+				<TD STYLE="vertical-align:top;">8413</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Куртмулаев Алим Назимович</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 16931 от 17.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">5</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">10</TD>
+				<TD STYLE="vertical-align:top;">9116</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Меметов Эльвис Ислямович</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 18601 от 20.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">6</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">11</TD>
+				<TD STYLE="vertical-align:top;">9174</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Османов Алим Аблаевич</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 18750 от 20.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">7</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">12</TD>
+				<TD STYLE="vertical-align:top;">15629</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Полескова-Григорян Габриэла Эдуардовна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 36795 от 31.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">8</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">13</TD>
+				<TD STYLE="vertical-align:top;">12804</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Усейнов Энвер Талятович</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">2</SPAN>
+			    № 28304 от 27.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, платная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">10</TD>
+                <TD STYLE="vertical-align:top;">2</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">14</TD>
+				<TD STYLE="vertical-align:top;">12804</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Усейнов Энвер Талятович</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 28303 от 27.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">9</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">15</TD>
+				<TD STYLE="vertical-align:top;">14395</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Штыренкова Анжелика Славиковна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 35264 от 30.07.20 г., 43.04.02 Туризм () , очная, 2 года, ГОРГ, бюджетная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">сервис и туризм - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">35</TD>
+                <TD STYLE="vertical-align:top;">2</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">16</TD>
+				<TD STYLE="vertical-align:top;">9575</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Эрайзер Анастасия Андреевна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 19712 от 21.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 100 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">100</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">10</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">17</TD>
+				<TD STYLE="vertical-align:top;">8936</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Михайлов Николай Валериевич</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 18214 от 20.07.20 г., 35.04.06 Агроинженерия () , заочная, 2,5 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">сельское, лесное и рыбное хозяйство - 99 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">99</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">16</TD>
+                <TD STYLE="vertical-align:top;">1</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">18</TD>
+				<TD STYLE="vertical-align:top;">8784</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Рублевский Дмитрий Валериевич</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 17857 от 19.07.20 г., 35.04.06 Агроинженерия () , заочная, 2,5 года, ГОРГ, бюджетная
+	            </TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">сельское, лесное и рыбное хозяйство - 99 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">99</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">16</TD>
+                <TD STYLE="vertical-align:top;">2</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">19</TD>
+				<TD STYLE="vertical-align:top;">9925</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Держицкая Екатерина Геннадьевна</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 20660 от 21.07.20 г., 07.04.04 Градостроительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">Градостроительство - 98 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">98</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">11</TD>
+			</TR>
+
+			<TR DEFAULTBG="transparent">
+				<TD STYLE="vertical-align:top;">20</TD>
+				<TD STYLE="vertical-align:top;">11445</TD>
+				<TD STYLE="vertical-align:top;" LN="1">Котовский Алексей Евгеньевич</TD>
+				<TD STYLE="vertical-align:top;"><SPAN STYLE="background-color:#999999;padding: 0 2px 0 2px;color:#ffffff;cursor:help;" TITLE="Приоритет заявки">1</SPAN>
+			    № 24635 от 24.07.20 г., 08.04.01 Строительство () , очная, 2 года, ГОРГ, бюджетная
+	             <SPAN CLASS="warning" STYLE="background-color:#00bb00 !important;">СОГЛАСИЕ НА ЗАЧИСЛЕНИЕ</SPAN></TD>
+				<TD STYLE="vertical-align:top;font-size:11px;">техника и технологии строительства - 98 (ВИ) <BR />&#x0D;</TD>
+				<TD STYLE="vertical-align:top;">98</TD>
+
+                <TD STYLE="vertical-align:top;">30</TD>
+                <TD STYLE="vertical-align:top;">60</TD>
+                <TD STYLE="vertical-align:top;">1</TD>
+			</TR>
+
+        </tbody>
+	</TABLE>
+
+        <span class="legend" style="width:18%;z-index:1000;"><span style="background-color:#ddffdd"></span> Прием без вступительных испытаний</span>
+
+        <span class="legend" style="width:18%;z-index:1000;"><span style="background-color:#ffffdd"></span> Прием на обучение за счет бюджетных ассигнований в пределах установленной квоты</span>
+
+        <span class="legend" style="width:18%;z-index:1000;"><span style="background-color:#ddddff"></span> Преимущественное право зачисления</span>
+
+    <span class="legend" style="width:18%"><span style="background-color:#ffdddd;"></span>наличие статуса заявки, не позволяющего участвовать в конкурсе или количество набранных баллов меньше минимально допустимого.</span>
+</DIV>
+</DIV><br /><br />
+            </FORM>
+	    </DIV>
+        <script type="text/javascript">
+<!--
+function setNotice(sMsg) {
+    if(sMsg.length > 0) $("#NOTICE").html(sMsg);
+    if($("#NOTICE").html().length > 0) $("#NOTICE").dialog("open");
+}
+function setErr(sMsg) {
+    if(sMsg.length != 0) $("#ERRMSG").html(sMsg);
+    if($("#ERRMSG").html().length != 0) $("#ERRMSG").dialog("open");
+}
+function writeErrMsg() {
+    $.ajax({
+        dataType: 'xml',
+        type: "POST",
+        url: 'default.aspx?WCI=ENTRANTLIST&WCF=FRAME1&WCE=SENDERROR.PAGES.&WCU=5.1.22402.20290825T19111332255410522.309644.4960981',
+        data: {
+            error: $("#ERRMSG").html()
+        },
+        success: function (result) {
+            if ($(result).find('CONFIRM').text() == '1') {
+                $("#ERRMSG").dialog("close");
+                $("#ERRMSG").html("");
+            }
+        }
+    });
+}
+//-->
+</script>
+<DIV CLASS="filterdiv" ID="SETFILTERDIV" STYLE="z-index: 1; padding-bottom: 34px;">
+    <SCRIPT>
+<!--
+    function closeframe() {
+       $("DIV.overlay").remove();
+       $("#FILTERFRAME").attr("src","");
+       $("#EDITORIMAGE").attr("src","AdmGraphics/empty.gif");
+       $("#EDITORCAPTION").html("");
+       $("#SETFILTERDIV").slideToggle("fast");
+       $("#FILTERFRAME").contents().find("#thisForm").append("<INPUT TYPE='hidden' ID='RELOADPAR' ONCLICK='JavaScript:reloadpar();'>");
+       $("#FILTERFRAME").contents().find("#RELOADPAR").click();
+}
+//-->
+</SCRIPT>
+<DIV class="wtitle">
+	<TABLE CLASS="all" style="width:100%">
+		<TR>
+			<TD style="text-align:left;vertical-align:middle;"><IMG ID="EDITORIMAGE" SRC="AdmGraphics/empty.gif" style="height:24px"/><SPAN ID="EDITORCAPTION"></SPAN></TD>
+			<TD style="text-align:right;vertical-align:middle;width:20px;"><DIV CLASS="close" ONCLICK="closeframe();" TITLE="Закрыть окно"></DIV></TD>
+		</TR>
+    </TABLE>
+</DIV>
+    <IFRAME ID="FILTERFRAME" FRAMEBORDER="0" SCROLLING="no" STYLE="height:100%"></IFRAME>
+</DIV>
+<DIV ID="CONFIRM" TITLE="Вопрос системы"></DIV>
+<DIV ID="ERRMSG" TITLE="Ошибка системы"></DIV>
+<DIV ID="NOTICE" TITLE="Сообщение системы"></DIV>
+
+        <IFRAME ID="FRAMEBOOKMARK" STYLE="display:none;" SRC=""></IFRAME>
+        <FOOTER ID="footer">
+<SCRIPT type="text/javascript">
+<!--
+var sqlmsg = "";
+//-->
+</SCRIPT>
+           <SPAN CLASS="copy" STYLE="cursor:pointer;" ONCLICK="JavaScript:setNotice('Время отклика системы: 0,71875 секунд.');">© ООО Гисофт, 2012-2020. Все права защищены.</SPAN>
+           <SPAN CLASS="write"></SPAN>
+        </FOOTER>
+	</BODY>
+</HTML>
