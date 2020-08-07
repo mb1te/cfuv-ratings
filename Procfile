@@ -1,1 +1,1 @@
-web gunicorn cfuv.wsgi --log-file -
+web: gunicorn cfuv.wsgi --log-file -
